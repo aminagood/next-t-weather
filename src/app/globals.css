@@ -1,21 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.weatherBg {
+  background: url("https://pics.craiyon.com/2023-09-29/8e5c90a15f344dd5a76b28be92e69714.webp");
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.heading {
+  color: white;
+  font-weight: 700;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.weatherResultbox {
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  /* border: 1px solid; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.weathericn {
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+}
+.weathercity {
+  font-size: 35px;
+}
+.weathertmp {
+  font-size: 55px;
+  font-weight: 700;
 }
